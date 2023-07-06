@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+</head>
+<body>
+	<div id="introduction">
+		<h1>Forms</h1>
+		<p>We are going to ask you some irrelevant questions that can help us to improve this page</p>
+
+		<form action="" method="POST">
+			<label for="user_name">Name:</label>
+			<input type="text" id="user_name" name="user_name" placeholder="Mario">
+			
+			<br>
+			<br>
+			
+			<label for="user_password">Password:</label>
+			<input type="password" id="user_password" name="user_password">
+
+
+			<br>
+			<br>
+			
+			<label for="user_age">Age:</label>
+			<input type="number" id="user_age" name="user_age" step="1">
+
+
+			<br>
+			<br>
+			
+			<label for="user_volume">Volume:</label>
+			<input type="range" id="user_volume" name="user_volume" max="10" min="1" step=".5">
+
+
+			<br>
+			<br>
+			
+			<p>Select your favorities sports</p>
+			<label for="user_likes">Basketboll</label>
+			<input type="checkbox" id="user_likes" name="favorities" value="basketboll">
+
+			<label for="user_likes">Soccer</label>
+			<input type="checkbox" id="user_likes" name="favorities" value="Soccer">
+
+			<label for="user_likes">Nothing</label>
+			<input type="checkbox" id="user_likes" name="favorities" value="nothing">
+
+
+			<br>
+			<br>
+			
+			<p>When i born?</p>
+			<input type="radio" id="one" name="born" value="2003">
+			<label for="one">2003</label>
+
+			<input type="radio" id="two" name="born" value="2005">
+			<label for="two">2005</label>
+
+			<input type="radio" id="three" name="born" value="2006">
+			<label for="three">2006</label>
+
+
+			<br>
+			<br>
+			
+			<label for="user_age">Age:</label>
+			<input type="number" id="user_age" name="user_age" step="1">
+			
+			
+			<br>
+			<br>
+
+			<form action="/example.html" method="POST">
+				<label for="payment">Credit Card Number (no spaces):</label>
+				<br>
+				<input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+				<input type="submit" value="Submit">
+			  </form>
+
+
+
+
+		</form>
+	</div>
+</body>
+</html>
